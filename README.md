@@ -1,11 +1,13 @@
 # OpenAddons WebStore
 
 <div align="center">
-  <img src="assets/logo.png" alt="OpenAddons WebStore Logo" width="200"/>
+  <img src="assets/logo.png" alt="OpenAddons WebStore Logo" width="120"/>
   
   <p align="center">
     A modern, open-source addon store platform for developers and creators
   </p>
+  
+  <img src="assets/demo.png" alt="OpenAddons WebStore Demo" width="800"/>
 </div>
 
 ## Overview
@@ -22,12 +24,6 @@ OpenAddons WebStore is a full-stack platform designed to host, distribute, and m
 - **Secure Distribution** - Safe addon hosting with automated security scanning
 - **REST API** - Full API access for integration and automation
 - **Open Source** - Transparent, community-driven development
-
-## Demo
-
-<div align="center">
-  <img src="assets/demo.png" alt="OpenAddons WebStore Demo" width="800"/>
-</div>
 
 ## Tech Stack
 

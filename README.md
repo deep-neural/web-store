@@ -1,14 +1,29 @@
 # OpenAddons WebStore
 
+<h1 align="center">
+  <a href="https://github.com/deep-neural/web-store"><img src="./assets/logo.png" alt="OpenAddons WebStore" height="120"></a>
+  <br>
+  OpenAddons WebStore
+  <br>
+</h1>
+<h4 align="center">A modern, open-source addon store platform for developers and creators</h4>
+<p align="center">
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/badge/Frontend-React-61DAFB.svg?longCache=true&logo=react" alt="React" /></a>
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/badge/Language-TypeScript-3178C6.svg?longCache=true&logo=typescript" alt="TypeScript" /></a>
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/badge/Backend-Python-3776AB.svg?longCache=true&logo=python" alt="Python" /></a>
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/badge/Framework-FastAPI-009688.svg?longCache=true&logo=fastapi" alt="FastAPI" /></a>
+  <br>
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/badge/State-Redux_Toolkit-764ABC.svg?longCache=true&logo=redux" alt="Redux Toolkit" /></a>
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/badge/Icons-Lucide-F56565.svg?longCache=true" alt="Lucide React" /></a>
+  <br>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-5865F2.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/deep-neural/web-store"><img src="https://img.shields.io/static/v1?label=Build&message=Documentation&color=brightgreen" /></a>
+</p>
+
 <div align="center">
-  <img src="assets/logo.png" alt="OpenAddons WebStore Logo" width="120"/>
-  
-  <p align="center">
-    A modern, open-source addon store platform for developers and creators
-  </p>
-  
-  <img src="assets/demo.png" alt="OpenAddons WebStore Demo" width="800"/>
+  <img src="./assets/demo.png" alt="OpenAddons WebStore Demo" width="800"/>
 </div>
+<br>
 
 ## Overview
 

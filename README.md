@@ -1,5 +1,3 @@
-# OpenAddons WebStore
-
 <h1 align="center">
   <a href="https://github.com/deep-neural/web-store"><img src="./assets/logo.png" alt="OpenAddons WebStore" height="120"></a>
   <br>

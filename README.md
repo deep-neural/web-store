@@ -47,6 +47,7 @@ OpenAddons WebStore is a full-stack platform designed to host, distribute, and m
 
 ### Backend
 - **Python** - Fast and reliable backend services
+- **FastAPI** - Modern web framework
 - **RESTful API** - Clean API architecture
 - **Database** - Scalable data storage
 
@@ -55,44 +56,136 @@ OpenAddons WebStore is a full-stack platform designed to host, distribute, and m
 ### Prerequisites
 
 - Node.js 18+ and npm/yarn
-- Python 3.10+
-- pip for Python package management
+- Python 3.7+
+- Docker and Docker Compose
+- Google Cloud SDK (for deployment)
 
-### Installation
+### Clone Repository
 
-1. Clone the repository
 ```bash
-git clone https://github.com/deep-neural/web-store.git
-cd web-store
+$ git clone https://github.com/deep-neural/web-store
+$ cd web-store
 ```
 
-2. Install frontend dependencies
+### Setup Backend
+
+#### Install Miniconda
+
 ```bash
-cd frontend
-npm install
+# Download Miniconda installer
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Make it executable
+$ chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+# Run installer
+$ bash Miniconda3-latest-Linux-x86_64.sh
+
+# Follow the prompts:
+# - Press Enter to review license
+# - Type "yes" to accept
+# - Press Enter for default location or specify custom path
+# - Type "yes" when asked to initialize conda
+
+# Restart terminal or reload bash
+$ source ~/.bashrc
+
+# Verify installation
+$ conda --version
 ```
 
-3. Install backend dependencies
+#### Create Python Environment
+
 ```bash
-cd backend
-pip install -r requirements.txt
+$ conda create -n env1 python=3.7
+$ conda activate env1
+$ python --version
 ```
 
-### Running Locally
+#### Install Dependencies
 
-#### Frontend
 ```bash
-cd frontend
-npm run dev
+$ pip install fastapi uvicorn
 ```
 
-#### Backend
+#### Run Backend Server
+
 ```bash
-cd backend
-python main.py
+$ python server.py
 ```
 
-The frontend will be available at `http://localhost:5173` and the backend API at `http://localhost:8000`.
+The backend API will be available at `http://localhost:8000`.
+
+### Setup Frontend
+
+```bash
+$ cd frontend
+$ yarn
+
+# Start development server
+$ yarn dev
+```
+
+The frontend will be available at `http://localhost:5173`.
+
+## Deployment
+
+### GCP Authentication
+
+```bash
+# Install Google Cloud CLI
+$ snap install google-cloud-cli --classic
+
+# Authenticate with GCP
+$ gcloud auth login --no-launch-browser
+
+# Set your project
+$ gcloud config set project your-project
+```
+
+### Docker Setup
+
+```bash
+# Install Docker
+$ apt-get install docker.io docker-compose
+
+# Configure Docker to authenticate with Artifact Registry
+$ gcloud auth configure-docker us-central1-docker.pkg.dev
+```
+
+### Create Docker Artifact Registry
+
+```bash
+$ gcloud artifacts repositories create docker-repo \
+  --repository-format=docker \
+  --location=us-central1
+```
+
+### Build and Push Images
+
+```bash
+# Build images
+$ docker-compose -f docker-compose.yml build
+
+# Push to registry
+$ docker-compose -f docker-compose.yml push
+```
+
+### Clean Docker Cache and Images
+
+```bash
+# Stop and remove all containers
+$ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+
+# Remove all images
+$ docker rmi $(docker images -a -q) --force
+
+# Clean up system
+$ docker system prune -a --volumes --force
+
+# Clean build cache
+$ docker builder prune --all --force
+```
 
 ## Project Structure
 

@@ -78,5 +78,5 @@ if __name__ == "__main__":
         host="0.0.0.0",
         port=443,
         ssl_keyfile="/etc/letsencrypt/live/webstore.yoursite.com/privkey.pem",
-        ssl_certfile="/etc/letsencrypt/live/webstore.yourstire.com/fullchain.pem"
+        ssl_certfile="/etc/letsencrypt/live/webstore.yoursite.com/fullchain.pem"
     )

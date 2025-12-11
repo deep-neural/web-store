@@ -43,11 +43,12 @@ OpenAddons WebStore is a full-stack platform designed to host, distribute, and m
 ### Frontend
 - **TypeScript** - Type-safe JavaScript
 - **React** - Component-based UI library
-- **Modern tooling** - Vite/Webpack for optimal build performance
+- **Webpack/Vite** - Modern build tooling for development and production
 
 ### Backend
 - **Python** - Fast and reliable backend services
-- **FastAPI** - Modern web framework
+- **FastAPI** - Modern web framework for development (with reverse proxy to Webpack dev server)
+- **Django** - Production static file serving
 - **RESTful API** - Clean API architecture
 - **Database** - Scalable data storage
 
@@ -57,7 +58,7 @@ OpenAddons WebStore is a full-stack platform designed to host, distribute, and m
 
 - Node.js 18+ and npm/yarn
 - Python 3.7+
-- Docker and Docker Compose
+- Docker and Docker Compose (for deployment)
 - Google Cloud SDK (for deployment)
 
 ### Clone Repository
@@ -105,28 +106,60 @@ $ python --version
 #### Install Dependencies
 
 ```bash
-$ pip install fastapi uvicorn
+$ pip install fastapi uvicorn django gunicorn
 ```
 
-#### Run Backend Server
+### Development Mode
+
+For development, use the FastAPI server which provides a reverse proxy to the Webpack dev server for hot reloading and rapid prototyping:
 
 ```bash
-$ python server.py
+# Navigate to backend directory
+$ cd backend
+
+# Run development server (FastAPI with Webpack reverse proxy)
+$ python development.py
 ```
 
-The backend API will be available at `http://localhost:8000`.
+The development server will:
+- Start the FastAPI backend on `http://localhost:8000`
+- Proxy frontend requests to the Webpack dev server
+- Enable hot module replacement for frontend development
+- Provide API endpoints at `/api/*`
 
-### Setup Frontend
+### Production Mode
+
+For production, use the Django server which serves pre-built static files from the Webpack bundle:
+
+```bash
+# First, build the frontend
+$ cd frontend
+$ npm run build
+
+# Then run the production server
+$ cd ../backend
+$ python production.py
+```
+
+The production server will:
+- Serve optimized, bundled static files using Django
+- Run on HTTPS (port 443) with SSL certificates
+- Use Gunicorn as the WSGI server for better performance
+- Serve all static assets from `/home/ubuntu/webstore/frontend/dist`
+
+### Frontend Development
+
+If you want to run the frontend independently for development:
 
 ```bash
 $ cd frontend
 $ yarn
 
-# Start development server
+# Start Webpack dev server
 $ yarn dev
 ```
 
-The frontend will be available at `http://localhost:5173`.
+The frontend will be available at `http://localhost:5173` (or the configured Webpack dev server port).
 
 ## Deployment
 
@@ -194,8 +227,11 @@ openaddons-webstore/
 ├── frontend/          # React TypeScript application
 │   ├── src/
 │   ├── public/
+│   ├── dist/         # Production build output
 │   └── package.json
 ├── backend/           # Python backend
+│   ├── development.py    # FastAPI dev server with Webpack proxy
+│   ├── production.py     # Django production server with static files
 │   ├── api/
 │   ├── models/
 │   ├── services/
@@ -205,6 +241,28 @@ openaddons-webstore/
 │   └── demo.png
 └── README.md
 ```
+
+## Server Modes
+
+### Development Server (`development.py`)
+- **Purpose**: Rapid prototyping and development
+- **Technology**: FastAPI with reverse proxy
+- **Features**:
+  - Hot module replacement
+  - Fast rebuild times
+  - Proxies to Webpack dev server
+  - API endpoints available
+  - Auto-reload on code changes
+
+### Production Server (`production.py`)
+- **Purpose**: Production deployment
+- **Technology**: Django with Gunicorn
+- **Features**:
+  - Serves pre-built static bundles
+  - SSL/HTTPS support
+  - Optimized performance
+  - Security-hardened file serving
+  - Production-grade WSGI server
 
 ## API Documentation
 
@@ -230,7 +288,6 @@ For support, please open an issue in the GitHub repository or contact the mainta
 
 ## Roadmap
 
-- [ ] Payment integration for premium addons
 - [ ] Multi-language support
 - [ ] Enhanced analytics dashboard
 - [ ] Mobile applications

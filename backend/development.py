@@ -77,6 +77,6 @@ if __name__ == "__main__":
         app,
         host="0.0.0.0",
         port=443,
-        ssl_keyfile="/etc/letsencrypt/live/your.domain.here/privkey.pem",
-        ssl_certfile="/etc/letsencrypt/live/your.domain.here/fullchain.pem"
+        ssl_keyfile="/etc/letsencrypt/live/webstore.fluxapp.co/privkey.pem",
+        ssl_certfile="/etc/letsencrypt/live/webstore.fluxapp.co/fullchain.pem"
     )

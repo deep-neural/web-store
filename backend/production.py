@@ -185,8 +185,8 @@ def main():
         sys.exit(1)
     
     # SSL certificate paths
-    ssl_keyfile = "/etc/letsencrypt/live/webstore.fluxapp.co/privkey.pem"
-    ssl_certfile = "/etc/letsencrypt/live/webstore.fluxapp.co/fullchain.pem"
+    ssl_keyfile = "/etc/letsencrypt/live/webstore.yoursite.com/privkey.pem"
+    ssl_certfile = "/etc/letsencrypt/live/webstore.yoursite.com/fullchain.pem"
     
     print(f"Starting HTTPS server on 0.0.0.0:443")
     print(f"SSL Certificate: {ssl_certfile}")

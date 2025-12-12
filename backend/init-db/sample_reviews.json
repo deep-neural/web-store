@@ -1,0 +1,244 @@
+{
+  "reviews": [
+    {
+      "addon_id": "focus-timer-pro-001",
+      "user_name": "user4782",
+      "rating": 5,
+      "review_text": "Transformed my productivity! The website blocking during focus sessions is a game-changer.",
+      "review_date": "2025-12-02",
+      "helpful_count": 42
+    },
+    {
+      "addon_id": "focus-timer-pro-001",
+      "user_name": "user9123",
+      "rating": 4,
+      "review_text": "Great timer but I wish it had more customization options for break lengths.",
+      "review_date": "2025-11-28",
+      "helpful_count": 18
+    },
+    {
+      "addon_id": "focus-timer-pro-001",
+      "user_name": "user2456",
+      "rating": 5,
+      "review_text": "The analytics feature helped me identify my most productive hours. Highly recommend!",
+      "review_date": "2025-11-24",
+      "helpful_count": 31
+    },
+    {
+      "addon_id": "dark-reader-universal-002",
+      "user_name": "user7891",
+      "rating": 5,
+      "review_text": "My eyes thank me every day! Works perfectly on every site I visit.",
+      "review_date": "2025-11-30",
+      "helpful_count": 156
+    },
+    {
+      "addon_id": "dark-reader-universal-002",
+      "user_name": "user3345",
+      "rating": 5,
+      "review_text": "Best dark mode extension ever. The customization options are incredible.",
+      "review_date": "2025-11-26",
+      "helpful_count": 203
+    },
+    {
+      "addon_id": "dark-reader-universal-002",
+      "user_name": "user6012",
+      "rating": 4,
+      "review_text": "Almost perfect! Occasionally has issues with some complex websites, but 95% of the time it's flawless.",
+      "review_date": "2025-11-22",
+      "helpful_count": 89
+    },
+    {
+      "addon_id": "quicknote-capture-003",
+      "user_name": "user8234",
+      "rating": 5,
+      "review_text": "Perfect for research! The tagging system keeps all my notes organized effortlessly.",
+      "review_date": "2025-11-18",
+      "helpful_count": 27
+    },
+    {
+      "addon_id": "quicknote-capture-003",
+      "user_name": "user1567",
+      "rating": 4,
+      "review_text": "Really useful but the sync feature could be faster. Otherwise solid addon.",
+      "review_date": "2025-11-14",
+      "helpful_count": 15
+    },
+    {
+      "addon_id": "price-tracker-alert-004",
+      "user_name": "user5678",
+      "rating": 5,
+      "review_text": "Saved me $300 on a laptop by tracking the price for two weeks. Worth every install!",
+      "review_date": "2025-12-01",
+      "helpful_count": 178
+    },
+    {
+      "addon_id": "price-tracker-alert-004",
+      "user_name": "user9901",
+      "rating": 5,
+      "review_text": "Never shopping without this again. The price history charts are super helpful.",
+      "review_date": "2025-11-27",
+      "helpful_count": 142
+    },
+    {
+      "addon_id": "price-tracker-alert-004",
+      "user_name": "user4321",
+      "rating": 4,
+      "review_text": "Works great for most sites, but doesn't support all regional stores yet.",
+      "review_date": "2025-11-23",
+      "helpful_count": 64
+    },
+    {
+      "addon_id": "translation-buddy-005",
+      "user_name": "user7123",
+      "rating": 5,
+      "review_text": "Essential for browsing international sites. Translations are very accurate!",
+      "review_date": "2025-11-21",
+      "helpful_count": 95
+    },
+    {
+      "addon_id": "translation-buddy-005",
+      "user_name": "user2890",
+      "rating": 4,
+      "review_text": "Good translation quality but sometimes slow on large pages.",
+      "review_date": "2025-11-17",
+      "helpful_count": 52
+    },
+    {
+      "addon_id": "video-downloader-plus-006",
+      "user_name": "user6543",
+      "rating": 5,
+      "review_text": "Downloads are super fast and the quality options are excellent!",
+      "review_date": "2025-11-29",
+      "helpful_count": 234
+    },
+    {
+      "addon_id": "video-downloader-plus-006",
+      "user_name": "user8765",
+      "rating": 4,
+      "review_text": "Works well but occasionally doesn't detect videos on some newer streaming sites.",
+      "review_date": "2025-11-25",
+      "helpful_count": 127
+    },
+    {
+      "addon_id": "video-downloader-plus-006",
+      "user_name": "user3210",
+      "rating": 5,
+      "review_text": "The format converter is a nice bonus feature. Everything just works!",
+      "review_date": "2025-11-20",
+      "helpful_count": 189
+    },
+    {
+      "addon_id": "password-generator-secure-007",
+      "user_name": "user1098",
+      "rating": 5,
+      "review_text": "Simple, secure, and exactly what I needed. No bloat, just good passwords.",
+      "review_date": "2025-11-12",
+      "helpful_count": 73
+    },
+    {
+      "addon_id": "password-generator-secure-007",
+      "user_name": "user5432",
+      "rating": 5,
+      "review_text": "Love that it doesn't track anything. Privacy-respecting and effective.",
+      "review_date": "2025-11-08",
+      "helpful_count": 61
+    },
+    {
+      "addon_id": "tab-manager-ultimate-008",
+      "user_name": "user9876",
+      "rating": 5,
+      "review_text": "Finally! An addon that handles my 100+ tab habit. Search feature is brilliant.",
+      "review_date": "2025-11-26",
+      "helpful_count": 145
+    },
+    {
+      "addon_id": "tab-manager-ultimate-008",
+      "user_name": "user2109",
+      "rating": 4,
+      "review_text": "Great for organization but takes a moment to get used to the interface.",
+      "review_date": "2025-11-22",
+      "helpful_count": 88
+    },
+    {
+      "addon_id": "tab-manager-ultimate-008",
+      "user_name": "user7654",
+      "rating": 5,
+      "review_text": "The memory-saving tab suspension feature is perfect. My browser runs so much smoother now.",
+      "review_date": "2025-11-19",
+      "helpful_count": 112
+    },
+    {
+      "addon_id": "code-snippet-manager-009",
+      "user_name": "user3987",
+      "rating": 5,
+      "review_text": "Saves me so much time! No more searching through old projects for that one function.",
+      "review_date": "2025-12-01",
+      "helpful_count": 67
+    },
+    {
+      "addon_id": "code-snippet-manager-009",
+      "user_name": "user8123",
+      "rating": 4,
+      "review_text": "Great tool for developers. Would love to see more language support though.",
+      "review_date": "2025-11-27",
+      "helpful_count": 45
+    },
+    {
+      "addon_id": "weather-forecast-widget-010",
+      "user_name": "user4567",
+      "rating": 5,
+      "review_text": "Beautiful widget and very accurate forecasts. Love the animated backgrounds!",
+      "review_date": "2025-12-03",
+      "helpful_count": 92
+    },
+    {
+      "addon_id": "weather-forecast-widget-010",
+      "user_name": "user6789",
+      "rating": 4,
+      "review_text": "Does what it says. Simple and effective weather updates.",
+      "review_date": "2025-11-29",
+      "helpful_count": 58
+    },
+    {
+      "addon_id": "social-share-booster-011",
+      "user_name": "user1234",
+      "rating": 4,
+      "review_text": "Makes social sharing much easier. Scheduling feature is super convenient.",
+      "review_date": "2025-11-20",
+      "helpful_count": 34
+    },
+    {
+      "addon_id": "social-share-booster-011",
+      "user_name": "user5678",
+      "rating": 5,
+      "review_text": "Essential for content creators! Analytics help me understand what works.",
+      "review_date": "2025-11-16",
+      "helpful_count": 41
+    },
+    {
+      "addon_id": "email-tracker-pro-012",
+      "user_name": "user9012",
+      "rating": 5,
+      "review_text": "Game changer for sales! Knowing when emails are opened helps me follow up at the right time.",
+      "review_date": "2025-11-24",
+      "helpful_count": 156
+    },
+    {
+      "addon_id": "email-tracker-pro-012",
+      "user_name": "user3456",
+      "rating": 4,
+      "review_text": "Very useful but premium features are a bit pricey. Free tier is still good though.",
+      "review_date": "2025-11-20",
+      "helpful_count": 89
+    },
+    {
+      "addon_id": "email-tracker-pro-012",
+      "user_name": "user7890",
+      "rating": 5,
+      "review_text": "The real-time notifications are incredibly helpful. Never miss an important email response again.",
+      "review_date": "2025-11-18",
+      "helpful_count": 124
+    }
+  ]
+}

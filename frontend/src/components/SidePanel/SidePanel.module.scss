@@ -1,0 +1,280 @@
+.side-panel {
+  width: 280px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #efefef;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.side-panel-header {
+  padding: 16px 12px 8px 12px;
+}
+
+.store-selector {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1d1d1f;
+
+  &:hover {
+    background-color: #e8e8ed;
+  }
+
+  .store-icon {
+    color: #0071e3;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .store-name {
+    flex: 1;
+    text-align: left;
+  }
+
+  .chevron {
+    color: #86868b;
+    flex-shrink: 0;
+  }
+}
+
+.search-container {
+  padding: 12px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+
+  &:focus-within {
+    border-color: #0071e3;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+  }
+
+  .search-icon {
+    color: #86868b;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #1d1d1f;
+
+    &::placeholder {
+      color: #86868b;
+    }
+  }
+}
+
+.side-nav {
+  flex: 1;
+  padding: 8px 0;
+  overflow-y: auto;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+
+  &.active {
+    .nav-link {
+      background-color: #e8e8ed;
+      font-weight: 600;
+      
+      .nav-icon {
+        color: #0071e3;
+      }
+    }
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 12px;
+  margin: 0 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e8e8ed;
+    
+    .nav-icon {
+      color: #0071e3;
+    }
+  }
+
+  .nav-icon {
+    color: #0071e3;
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+  }
+
+  .nav-label {
+    flex: 1;
+    line-height: 1.3;
+  }
+}
+
+.nav-divider {
+  height: 1px;
+  background-color: #d2d2d7;
+  margin: 12px 20px;
+}
+
+.categories-section {
+  margin-top: 8px;
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #86868b;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 8px 20px 4px 20px;
+    margin: 0 0 4px 0;
+  }
+}
+
+// Scrollbar styling for webkit browsers
+.side-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.side-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.side-panel::-webkit-scrollbar-thumb {
+  background-color: #d2d2d7;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #b4b4b9;
+  }
+}
+
+// Dark mode support
+@media (prefers-color-scheme: dark) {
+  .side-panel {
+    background-color: #1e1e1e;
+    border-right-color: #3a3a3c;
+  }
+
+  .side-panel-header {
+    border-bottom-color: #3a3a3c;
+  }
+
+  .store-selector {
+    color: #f5f5f7;
+
+    &:hover {
+      background-color: #2c2c2e;
+    }
+
+    .store-icon {
+      color: #0a84ff;
+    }
+
+    .chevron {
+      color: #98989d;
+    }
+  }
+
+  .search-box {
+    background-color: #2c2c2e;
+    border-color: #3a3a3c;
+
+    &:focus-within {
+      border-color: #0a84ff;
+      box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.1);
+    }
+
+    .search-icon {
+      color: #98989d;
+    }
+
+    .search-input {
+      color: #f5f5f7;
+
+      &::placeholder {
+        color: #98989d;
+      }
+    }
+  }
+
+  .nav-link {
+    color: #f5f5f7;
+
+    &:hover {
+      background-color: #2c2c2e;
+      
+      .nav-icon {
+        color: #0a84ff;
+      }
+    }
+
+    .nav-icon {
+      color: #0a84ff;
+    }
+  }
+
+  .nav-item.active .nav-link {
+    background-color: #2c2c2e;
+    
+    .nav-icon {
+      color: #0a84ff;
+    }
+  }
+
+  .nav-divider {
+    background-color: #3a3a3c;
+  }
+
+  .section-title {
+    color: #98989d;
+  }
+
+  .side-panel::-webkit-scrollbar-thumb {
+    background-color: #48484a;
+
+    &:hover {
+      background-color: #5e5e60;
+    }
+  }
+}

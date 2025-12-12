@@ -1,0 +1,13 @@
+# Requirements for development.py and production.py
+
+# FastAPI and dependencies (for development.py)
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+httpx==0.27.2
+
+# Django and Gunicorn (for production.py)
+Django==5.1.3
+gunicorn==23.0.0
+
+# Additional common dependencies
+python-dotenv==1.0.1

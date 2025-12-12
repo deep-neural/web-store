@@ -2,7 +2,6 @@ import React from 'react';
 import w1 from './images/w1.jpg';
 import w2 from './images/w2.jpg';
 import w3 from './images/w3.jpg';
-import './DiscoverPanel.module.scss';
 import {
   Shield,
   Zap,

@@ -10,12 +10,14 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 
   &.with-right-panel {
     // Future support for right panel if needed
   }
-}
 
-// The SidePanel will take its own width (280px)
-// The children (DiscoverPanel) will take the remaining space
+  // Allow the content area to scroll
+  > :not(.side-panel) {
+    overflow-y: auto;
+    flex: 1;
+  }
+}

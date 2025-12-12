@@ -1,7 +1,0 @@
-version: "2.2"
-services:
-  custom-build-v2:
-    build:
-      context: .
-      args:
-    image: us-central1-docker.pkg.dev/your-gcp-registiry/docker-repo/webstore:latest
